@@ -1,2 +1,22 @@
-# AeroSense.ai-AirQuality_Monitor-
-AeroSense.ai Is An AI-Powered Air Quality Monitoring Platform That Provides Real-Time AQI Data For Any Location. It Offers Pollutant Details (PM2.5, PM10, CO₂, NO₂, SO₂, O₃, And More), Future Forecasts, And Personalized Health Recommendations With Do’s And Don’ts Based On Air Conditions. Built Using Recent Datasets, With Live Deployment Coming Soon
+# AeroSense.ai - Backend
+
+This is the production-ready backend for AeroSense.ai, an AI-powered air quality monitoring and forecasting platform. Built with Node.js, TypeScript, MongoDB, and Redis.
+
+## Features
+- **Real-time AQI**: Fetches live data from OpenWeather.
+- **Caching**: Uses Redis to minimize API costs and latency.
+- **AI Forecast**: Simple linear regression engine predicting next 24 hours based on historical trends.
+- **Background Jobs**: 30-minute interval database snapshots for history tracking.
+- **Threshold Alerts**: Automatic email notifications when AQI exceeds user-defined limits.
+- **Secure Auth**: JWT-based authentication with bcrypt password hashing.
+
+## Prerequisites
+- **Node.js**: v18+ 
+- **MongoDB**: Local or Atlas instance.
+- **Redis**: Required for caching (optional but recommended).
+- **OpenWeather API Key**: Get one at [openweathermap.org](https://openweathermap.org/api).
+
+## Installation
+
+1.  **Clone and Install**:
+    
